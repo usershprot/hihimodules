@@ -1,84 +1,33 @@
-/* Подключаем красивый шрифт */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 20px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-size: 2.5em;
-}
-
-header p {
-  opacity: 0.7;
+  background: #f5f5f5;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  background: white;
   padding: 20px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-}
-
-.module {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 15px 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  transition: background 0.3s ease;
-}
-
-.module:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.module-name {
-  font-weight: 600;
-  font-size: 1.1em;
-  word-break: break-all;
-}
-
-.actions button {
-  background: #ffffff12;
-  border: 1px solid #ffffff30;
-  color: white;
-  padding: 6px 12px;
   border-radius: 8px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.actions button:hover {
-  background: #ffffff25;
+.menu {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
 }
 
-.actions button:active {
-  transform: scale(0.95);
+select, button {
+  padding: 8px 12px;
+  font-size: 16px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9em;
-  opacity: 0.5;
+pre {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
 }
