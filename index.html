@@ -3,69 +3,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Python Modules by @usershprot</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-    header {
+      color: #fff;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.5em; }
+    header p { opacity: 0.7; }
+    .note { text-align: center; font-size: 0.95em; margin-top: 10px; opacity: 0.6; }
     .container {
       max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
+      margin: 0 auto;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
     }
     .module {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 15px 20px;
       border-radius: 12px;
+      margin-bottom: 15px;
+      transition: background 0.3s ease;
     }
-    .module-name {
-      font-weight: 600;
-    }
+    .module:hover { background: rgba(255, 255, 255, 0.12); }
+    .module-name { font-weight: 600; font-size: 1.1em; word-break: break-word; }
     .actions button {
-      margin-left: 10px;
-      background: #ffffff10;
+      background: #ffffff12;
       border: 1px solid #ffffff30;
       color: white;
       padding: 6px 12px;
       border-radius: 8px;
+      margin-left: 10px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s ease, transform 0.1s ease;
     }
-    .actions button:hover {
-      background: #ffffff30;
+    .actions button:hover { background: #ffffff25; }
+    .actions button:active { transform: scale(0.95); }
+    .raw-link {
+      margin-top: 8px;
+      font-size: 0.85em;
+      color: #ccc;
+      word-break: break-all;
     }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      opacity: 0.5;
-      font-size: 0.9em;
-    }
+    footer { text-align: center; margin-top: 40px; font-size: 0.9em; opacity: 0.5; }
   </style>
 </head>
 <body>
   <header>
     <h1>Модули от @usershprot</h1>
     <p>Добро пожаловать в мою коллекцию Python-модулей</p>
+    <div class="note">Добавляй сайт в закладки, чтобы не потерять свои скрипты!</div>
   </header>
   <div class="container">
     <div class="module">
@@ -76,18 +72,19 @@
         <button onclick="alert('Удаление доступно только тебе')">Удалить</button>
       </div>
     </div>
-    <div class="module">
-      <span class="module-name">super_script.zip</span>
-      <div class="actions">
-        <a href="modules/super_script.zip" download><button>Скачать</button></a>
-        <button onclick="alert('Функция пока в разработке')">Изменить</button>
-        <button onclick="alert('Функция пока в разработке')">Удалить</button>
-      </div>
-    </div>
-    <!-- Можно добавлять больше блоков -->
+    <div class="raw-link">https://usershprot.github.io/my-site/modules/mymodule1.py</div><div class="module">
+  <span class="module-name">super_script.dlm</span>
+  <div class="actions">
+    <a href="modules/super_script.dlm" download><button>Скачать</button></a>
+    <button onclick="alert('Функция пока в разработке')">Изменить</button>
+    <button onclick="alert('Функция пока в разработке')">Удалить</button>
+  </div>
+</div>
+<div class="raw-link">https://usershprot.github.io/my-site/modules/super_script.dlm</div>
+
   </div>
   <footer>
-    Сайт сделан с любовью &mdash; usershprot | Хранилище для своих лучших модулей
+    Сайт сделан с любовью — usershprot | Хранилище твоих скриптов
   </footer>
 </body>
 </html>
